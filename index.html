@@ -1,56 +1,367 @@
 <!doctype html>
 <html lang="pl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#063c2b" />
-    <meta name="description" content="Koszenie trawy, porządkowanie działek i pielęgnacja zieleni w Olsztynku i okolicach. Bezpłatna wycena." />
-    <title>Zadbane | Koszenie trawy — Olsztynek i okolice</title>
-    <link rel="icon" href="public/favicon.svg" />
-    <link rel="stylesheet" href="app/globals.css" />
-  </head>
-  <body>
-    <main>
-      <section class="hero" id="start">
-        <nav class="nav" aria-label="Główna nawigacja">
-          <a class="brand" href="#start" aria-label="Zadbane — strona główna"><span class="brand-leaves" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Zadbane</span></a>
-          <div class="nav-links"><a href="#uslugi">Usługi</a><a href="#o-nas">O nas</a><a href="#realizacje">Realizacje</a><a href="#kontakt">Kontakt</a></div>
-          <a class="nav-phone" href="tel:+48519510221"><span class="phone-symbol" aria-hidden="true">☎</span>519 510 221</a>
-        </nav>
-        <div class="hero-inner">
-          <p class="eyebrow">Koszenie trawy · Olsztynek i okolice</p>
-          <h1>Twój ogród.<br />Naprawdę zadbany.</h1>
-          <p class="hero-copy">Kosimy, porządkujemy i dbamy o zieleń,<br class="desktop-break" /> żebyś mógł po prostu cieszyć się swoim ogrodem.</p>
-          <a class="hero-cta" href="tel:+48519510221"><span aria-hidden="true">☎</span>Zadzwoń i umów wycenę</a>
-          <ul class="hero-facts" aria-label="Najważniejsze informacje"><li><b aria-hidden="true">◷</b> Szybka wycena</li><li><b aria-hidden="true">●</b> Własny sprzęt</li><li><b aria-hidden="true">♧</b> Dokładne sprzątanie</li></ul>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Koszenie trawy, porządkowanie działek, przycinanie żywopłotów i prace ogrodowe w Olsztynku i okolicach. Zadzwoń: 519 510 221.">
+  <meta name="theme-color" content="#123c29">
+  <meta property="og:title" content="Zadbane — usługi ogrodowe">
+  <meta property="og:description" content="Profesjonalne koszenie trawy i porządkowanie posesji w Olsztynku i okolicach.">
+  <meta property="og:type" content="website">
+  <title>Zadbane — koszenie trawy i usługi ogrodowe</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Zadbane",
+    "telephone": "+48 519 510 221",
+    "description": "Koszenie trawy, porządkowanie działek, przycinanie żywopłotów i sezonowe prace ogrodowe.",
+    "areaServed": {
+      "@type": "City",
+      "name": "Olsztynek"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#start" aria-label="Zadbane — strona główna">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M11 28C20 27 27 21 29 11C20 12 13 18 11 28Z" fill="currentColor"/>
+            <path d="M12 28C17 23 21 19 28 13" stroke="#123C29" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span>Zadbane</span>
+      </a>
+
+      <button class="menu-button" aria-label="Otwórz menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" aria-label="Główna nawigacja">
+        <a href="#uslugi">Usługi</a>
+        <a href="#realizacje">Realizacje</a>
+        <a href="#jak-dzialamy">Jak działamy</a>
+        <a href="#obszar">Obszar</a>
+        <a class="nav-call" href="tel:+48519510221">519 510 221</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="start">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">
+            <span></span>
+            Koszenie • porządkowanie • pielęgnacja
+          </span>
+
+          <h1>Zadbana posesja.<br><em>Bez tracenia weekendu.</em></h1>
+
+          <p class="hero-lead">
+            Kosimy, przycinamy i porządkujemy teren wokół domu.
+            Przyjeżdżamy z własnym sprzętem, ustalamy zakres prac
+            i zostawiamy posesję gotową do korzystania.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="tel:+48519510221">
+              Zadzwoń teraz
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </a>
+            <a class="button button-secondary" href="#realizacje">Zobacz realizacje</a>
+          </div>
+
+          <div class="hero-meta">
+            <div>
+              <strong>Jasna wycena</strong>
+              <span>przed rozpoczęciem pracy</span>
+            </div>
+            <div>
+              <strong>Własny sprzęt</strong>
+              <span>przyjeżdżamy przygotowani</span>
+            </div>
+          </div>
         </div>
-      </section>
 
-      <section class="services" id="uslugi">
-        <div class="ornament-heading"><h2>Zadbamy o każdy kawałek zieleni</h2><div><span></span><b aria-hidden="true">❧</b><span></span></div></div>
-        <div class="service-grid">
-          <article class="service-card"><span class="service-icon" aria-hidden="true">01</span><h3>Koszenie trawy</h3><p>Regularne i jednorazowe koszenie trawników przy domach, firmach i na działkach.</p></article>
-          <article class="service-card"><span class="service-icon" aria-hidden="true">02</span><h3>Porządkowanie ogrodu</h3><p>Wysoka trawa, chwasty, grabienie oraz uprzątnięcie terenu po wykonanej pracy.</p></article>
-          <article class="service-card"><span class="service-icon" aria-hidden="true">03</span><h3>Przycinanie zieleni</h3><p>Drobne prace ogrodowe i przycinanie roślin ustalane indywidualnie.</p></article>
+        <div class="hero-visual reveal">
+          <div class="hero-image" role="img" aria-label="Pielęgnacja zielonego ogrodu"></div>
+
+          <div class="hero-card">
+            <div class="hero-card-icon">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M5 13C11 12 15 8 17 3C11 4 6 7 5 13Z" fill="currentColor"/>
+                <path d="M7 20c0-5 3-9 10-14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Prosto i konkretnie</strong>
+              <span>Telefon, wycena, realizacja.</span>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="about" id="o-nas">
-        <div class="about-kicker">Lokalna ekipa z Olsztynka</div>
-        <div class="about-content"><h2>Porządna robota.<br />Normalne zasady.</h2><div><p>Najpierw oglądamy zdjęcia terenu, ustalamy zakres i podajemy cenę. Przyjeżdżamy z własnym sprzętem, wykonujemy pracę i zostawiamy po sobie porządek.</p><p class="about-note">Bez infolinii i formularzy — telefon odbieramy sami.</p><ul class="trust-list"><li><b>Własny sprzęt</b><span>przyjeżdżamy przygotowani</span></li><li><b>Cena przed pracą</b><span>bez niespodzianek na końcu</span></li><li><b>Lokalnie</b><span>Olsztynek i pobliskie miejscowości</span></li></ul></div></div>
-      </section>
+    <section class="trust-strip" aria-label="Najważniejsze informacje">
+      <div class="container trust-grid">
+        <div class="trust-item">
+          <span>01</span>
+          <p>Jednorazowe i regularne zlecenia</p>
+        </div>
+        <div class="trust-item">
+          <span>02</span>
+          <p>Obsługa domów, posesji i działek</p>
+        </div>
+        <div class="trust-item">
+          <span>03</span>
+          <p>Dojazd i termin ustalane indywidualnie</p>
+        </div>
+      </div>
+    </section>
 
-      <section class="work" id="realizacje">
-        <div class="work-heading"><div><p class="section-label">Jak wygląda współpraca</p><h2>Od zdjęcia do<br />zadbanej działki.</h2></div><p>Nie musisz znać dokładnej powierzchni. Kilka zdjęć i lokalizacja zwykle wystarczą, żeby zacząć.</p></div>
-        <div class="work-grid"><article><span>01</span><h3>Wyślij zdjęcia</h3><p>Podeślij kilka zdjęć terenu oraz lokalizację.</p></article><article><span>02</span><h3>Poznaj wycenę</h3><p>Ustalamy zakres, konkretną cenę i dogodny termin.</p></article><article><span>03</span><h3>My działamy</h3><p>Przyjeżdżamy, robimy swoje i sprzątamy po pracy.</p></article></div>
-      </section>
+    <section class="section services-section" id="uslugi">
+      <div class="container services-layout">
+        <div class="services-intro reveal">
+          <span class="section-label">Usługi</span>
+          <h2>Porządek wokół domu — od trawnika po żywopłot.</h2>
+          <p>
+            Wykonujemy jednorazowe porządki oraz regularną pielęgnację.
+            Zakres prac dopasowujemy do stanu terenu i oczekiwanego efektu.
+          </p>
+          <a class="services-call" href="tel:+48519510221">
+            Omów zlecenie
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+          </a>
+        </div>
 
-      <section class="contact" id="kontakt">
-        <div class="contact-copy"><p class="eyebrow">Bezpłatna wycena</p><h2>Masz teren<br />do ogarnięcia?</h2><p>Zadzwoń albo wyślij SMS ze zdjęciami. Ustalimy zakres, cenę i termin.</p></div><div class="contact-card"><span>Kontakt bezpośredni</span><a href="tel:+48519510221">519 510 221</a><p>Poniedziałek–sobota<br />Olsztynek i okolice</p><a class="contact-button" href="tel:+48519510221">Zadzwoń teraz <b aria-hidden="true">→</b></a></div>
-      </section>
+        <div class="services-list">
+          <article class="service-row reveal">
+            <span class="service-number">01</span>
+            <div>
+              <h3>Koszenie trawy</h3>
+              <p>Regularne i jednorazowe koszenie trawników, ogrodów oraz większych działek.</p>
+            </div>
+            <div class="service-row-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path d="M8 35h32M12 30c8-2 14-7 17-16M18 32c7-5 12-11 15-20M28 31c4-5 7-10 8-16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </article>
 
-      <footer><a class="brand brand-footer" href="#start"><span class="brand-leaves" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Zadbane</span></a><p>Koszenie trawy i porządkowanie zieleni.</p><p>© 2026 Zadbane</p></footer>
-      <a class="mobile-call" href="tel:+48519510221">Zadzwoń · 519 510 221</a>
-    </main>
-  </body>
+          <article class="service-row reveal">
+            <span class="service-number">02</span>
+            <div>
+              <h3>Porządkowanie działek</h3>
+              <p>Usuwanie wysokiej trawy, chwastów i zalegających pozostałości roślinnych.</p>
+            </div>
+            <div class="service-row-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path d="M9 36h30M13 31l5-13 6 13 6-19 5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </article>
+
+          <article class="service-row reveal">
+            <span class="service-number">03</span>
+            <div>
+              <h3>Żywopłoty i krzewy</h3>
+              <p>Przycinanie, skracanie i formowanie żywopłotów oraz drobnych krzewów.</p>
+            </div>
+            <div class="service-row-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path d="M12 35c2-11 8-19 20-23M14 20c8 0 14 5 16 14M28 16c5 2 8 6 9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </article>
+
+          <article class="service-row reveal">
+            <span class="service-number">04</span>
+            <div>
+              <h3>Prace sezonowe</h3>
+              <p>Grabienie liści, przygotowanie ogrodu do sezonu i bieżące prace porządkowe.</p>
+            </div>
+            <div class="service-row-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path d="M24 7v34M8 24h32M13 13l22 22M35 13 13 35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="realizacje">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-label">Realizacje</span>
+            <h2>Naturalne efekty naszej pracy.</h2>
+          </div>
+          <p>
+            Każda posesja jest inna, dlatego zakres prac dopasowujemy
+            do stanu terenu i oczekiwanego efektu.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <figure class="project reveal">
+            <img src="assets/realizacja-1.webp" alt="Przykład uporządkowania i pielęgnacji posesji" loading="lazy">
+          </figure>
+          <figure class="project reveal">
+            <img src="assets/realizacja-2.webp" alt="Przykład uporządkowania i pielęgnacji posesji" loading="lazy">
+          </figure>
+          <figure class="project reveal">
+            <img src="assets/realizacja-3.webp" alt="Przykład uporządkowania i pielęgnacji posesji" loading="lazy">
+          </figure>
+          <figure class="project reveal">
+            <img src="assets/realizacja-4.webp" alt="Przykład uporządkowania i pielęgnacji posesji" loading="lazy">
+          </figure>
+          <figure class="project reveal">
+            <img src="assets/realizacja-5.webp" alt="Przykład uporządkowania i pielęgnacji posesji" loading="lazy">
+          </figure>
+          <figure class="project reveal">
+            <img src="assets/realizacja-6.webp" alt="Przykład uporządkowania i pielęgnacji posesji" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="jak-dzialamy">
+      <div class="container process-grid">
+        <div class="process-intro reveal">
+          <span class="eyebrow eyebrow-light">
+            <span></span>
+            Jak działamy
+          </span>
+          <h2>Bez formularzy i zbędnego komplikowania.</h2>
+          <p>
+            Najszybciej ustalimy szczegóły telefonicznie.
+            Przy większym zleceniu możesz przesłać zdjęcia terenu.
+          </p>
+          <a href="tel:+48519510221">519 510 221</a>
+        </div>
+
+        <div class="process-list">
+          <article class="process-item reveal">
+            <span>01</span>
+            <div>
+              <h3>Krótka rozmowa</h3>
+              <p>Opisujesz działkę oraz zakres prac, który Cię interesuje.</p>
+            </div>
+          </article>
+
+          <article class="process-item reveal">
+            <span>02</span>
+            <div>
+              <h3>Ustalenie zakresu i ceny</h3>
+              <p>W razie potrzeby prosimy o zdjęcia albo oglądamy teren przed realizacją.</p>
+            </div>
+          </article>
+
+          <article class="process-item reveal">
+            <span>03</span>
+            <div>
+              <h3>Realizacja w ustalonym terminie</h3>
+              <p>Przyjeżdżamy z własnym sprzętem i wykonujemy ustalone prace.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section area-section" id="obszar">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-label">Obszar działania</span>
+            <h2>Działamy do 40 km od Olsztynka.</h2>
+          </div>
+          <p>
+            Dojeżdżamy do posesji w promieniu około 40 km.
+            Dokładny koszt dojazdu oraz termin ustalamy przed realizacją.
+          </p>
+        </div>
+
+        <div class="map-card reveal">
+          <iframe
+            title="Mapa obszaru działania Zadbane — do 40 kilometrów od Olsztynka"
+            src="https://www.google.com/maps?q=Olsztynek%2C%20Polska&z=9&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+
+          <div class="map-radius" aria-hidden="true">
+            <span>40 km</span>
+          </div>
+
+          <div class="map-badge">
+            <strong>Obszar dojazdu</strong>
+            <span>do około 40 km od Olsztynka</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div>
+            <span class="eyebrow eyebrow-light">
+              <span></span>
+              Kontakt
+            </span>
+            <h2>Masz teren do uporządkowania?</h2>
+            <p>Zadzwoń i ustalmy zakres prac oraz możliwy termin.</p>
+          </div>
+          <a class="contact-button" href="tel:+48519510221">
+            <span>519 510 221</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <a class="brand footer-brand" href="#start">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M11 28C20 27 27 21 29 11C20 12 13 18 11 28Z" fill="currentColor"/>
+            <path d="M12 28C17 23 21 19 28 13" stroke="#123C29" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span>Zadbane</span>
+      </a>
+
+      <p>Koszenie • porządkowanie • pielęgnacja</p>
+      <p>© <span id="year"></span> Zadbane</p>
+    </div>
+  </footer>
+
+  <a class="mobile-call" href="tel:+48519510221" aria-label="Zadzwoń do Zadbane">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M7 4h3l1.5 4-2 1.5a15 15 0 0 0 5 5l1.5-2 4 1.5v3c0 1.1-.9 2-2 2C10.8 19 5 13.2 5 6c0-1.1.9-2 2-2Z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
 </html>
